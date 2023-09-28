@@ -9,4 +9,16 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-print(numbers)
+
+numbers.sort()
+length = len(numbers)
+
+if (length % 2 == 1):                   # odd
+    median = numbers[length // 2]
+else:                                   # even
+    lowerMid = numbers[length // 2]
+    upperMid = numbers[length // 2 - 1]
+    median = (lowerMid + upperMid) / 2
+
+print("The median is: ", median)
+
