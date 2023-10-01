@@ -20,5 +20,5 @@ else:                                   # even
     upperMid = numbers[length // 2 - 1]
     median = (lowerMid + upperMid) / 2
 
-print(f"The median is {median}.")
+print("The median is", median)
 
